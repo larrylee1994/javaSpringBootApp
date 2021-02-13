@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Spring Boot</title>
+    <title>Spring Boot Books List</title>
 </head>
 <body>
 <h1>Book List</h1>
@@ -14,9 +14,9 @@
         <th>Publisher</th>
     </tr>
     <tr th:each="book : ${books}">
-        <td th:text="${book.id}">12345</td>
-        <td th:text="${book.title}">Spring in Action</td>
-        <td th:text="${book.publisher.name}">Wrox</td>
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.title}"></td>
+        <td th:text="${book.publisher.name}"></td>
     </tr>
 </table>
 </body>
